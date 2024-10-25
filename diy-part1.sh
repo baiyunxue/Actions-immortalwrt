@@ -14,10 +14,10 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source{自定义app} 
-echo 'src-git-full packages https://github.com/jjm2473/packages.git;istoreos-22.03' >> feeds.conf.default
-echo 'src-git-full luci https://github.com/jjm2473/luci.git;istoreos-22.03' >> feeds.conf.default
-echo 'src-git-full routing https://git.openwrt.org/feed/routing.git;openwrt-22.03' >> feeds.conf.default
-echo 'src-git-full telephony https://git.openwrt.org/feed/telephony.git;openwrt-22.03' >> feeds.conf.default
+echo 'src-git packages https://github.com/jjm2473/packages.git;istoreos-22.03' >> feeds.conf.default
+echo 'src-git luci https://github.com/jjm2473/luci.git;istoreos-22.03' >> feeds.conf.default
+echo 'src-git routing https://git.openwrt.org/feed/routing.git;openwrt-22.03' >> feeds.conf.default
+echo 'src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-22.03' >> feeds.conf.default
 # istore
 echo 'src-git store https://github.com/linkease/istore.git;main' >> feeds.conf.default
 # argon, etc.

@@ -19,9 +19,9 @@
 #src-git-full routing https://git.openwrt.org/feed/routing.git;openwrt-22.03
 #src-git-full telephony https://git.openwrt.org/feed/telephony.git;openwrt-22.03
 # istore
-src-git store https://github.com/linkease/istore.git;main
+echo 'src-git store https://github.com/linkease/istore.git;main' >> feeds.conf.default
 # argon, etc.
-src-git third https://github.com/jjm2473/openwrt-third.git;main
+echo 'src-git third https://github.com/jjm2473/openwrt-third.git;main' >> feeds.conf.default
 
 #sed -i '$a src-git store https://istore.linkease.com/repo/all/store.git' feeds.conf.default
 #svn co https://github.com/animegasan/luci-app-quickstart package/files/luci-app-quickstart

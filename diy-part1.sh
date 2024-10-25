@@ -14,14 +14,14 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source{自定义app} 
-echo 'src-git packages https://github.com/jjm2473/packages.git;istoreos-22.03' >> feeds.conf.default
-echo 'src-git luci https://github.com/jjm2473/luci.git;istoreos-22.03' >> feeds.conf.default
-echo 'src-git routing https://git.openwrt.org/feed/routing.git;openwrt-22.03' >> feeds.conf.default
-echo 'src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-22.03' >> feeds.conf.default
+src-git-full packages https://github.com/jjm2473/packages.git;istoreos-22.03
+src-git-full luci https://github.com/jjm2473/luci.git;istoreos-22.03
+src-git-full routing https://git.openwrt.org/feed/routing.git;openwrt-22.03
+src-git-full telephony https://git.openwrt.org/feed/telephony.git;openwrt-22.03
 # istore
-echo 'src-git store https://github.com/linkease/istore.git;main' >> feeds.conf.default
+src-git store https://github.com/linkease/istore.git;main
 # argon, etc.
-echo 'src-git third https://github.com/jjm2473/openwrt-third.git;main' >> feeds.conf.default
+src-git third https://github.com/jjm2473/openwrt-third.git;main
 
 #sed -i '$a src-git store https://istore.linkease.com/repo/all/store.git' feeds.conf.default
 #svn co https://github.com/animegasan/luci-app-quickstart package/files/luci-app-quickstart

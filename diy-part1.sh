@@ -16,7 +16,7 @@
 # Add a feed source{自定义app} 
 #git clone https://github.com/lisaac/luci-lib-docker package/luci-lib-docker
 #git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
-git clone https://dl.openwrt.ai/packages-23.05/aarch64_cortex-a53/kiddin9 filse/kiddin9
+sed -i '$a src-git kiddin9 https://dl.openwrt.ai/packages-23.05/aarch64_cortex-a53/kiddin9.git;main' feeds.conf.default
 # istore
 #sed -i '$a src-git store https://github.com/linkease/istore.git;main' feeds.conf.default
 # argon, etc.
